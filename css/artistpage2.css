@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+.hh
+{
+
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(39, 23, 23, 0.818)
+}
+
+.hh:hover
+{
+    background-color: #7f53ac;
+    background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+}
+
+*{
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body
+{
+    background-color: #7f5a83; 
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%); margin:0; padding: 0; height: 100%
+
+}
+
+.wrapper2 .sidebar{
+  background: rgb(27, 33, 36);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 275px;
+  height: 100%;
+  padding: 20px 0;
+  transition: all 0.5s ease;
+}
+
+.albumName
+{
+    list-style: none;
+
+    text-decoration: none;
+    color: white;
+}
+.wrapper2 .sidebar .profile{
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.wrapper2 .sidebar .profile img
+{
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.wrapper2 .sidebar .profile h3
+{
+    color: #ffffff;
+    margin: 10px 0 5px;
+}
+
+.wrapper2 .sidebar .profile p
+{
+  color: rgb(206, 240, 253);
+  font-size: 14px;
+}
+
+.wrapper2 .sidebar ul li a
+{
+  display: block;
+  padding: 13px 30px;
+  color: rgb(241, 237, 237);
+  font-size: 16px;
+  position: relative;
+}
+
+.wrapper2 .sidebar ul li a .icon
+{
+  color: #dee4ec;
+  width: 30px;
+  display: inline-block;
+}
+
+ol, ul 
+{
+    padding: 0;
+}
+
+.wrapper2 .sidebar ul li a:hover,
+.wrapper2 .sidebar ul li a.active{
+  color: #0c7db1;
+
+  background:white;
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+.wrapper2 .sidebar ul li a:hover .icon,
+.wrapper2 .sidebar ul li a.active .icon
+{
+  color: #0c7db1;
+}
+
+.wrapper2 .sidebar ul li a:hover:before,
+.wrapper2 .sidebar ul li a.active:before
+{
+  display: block;
+}
+
+.wrapper2 .section
+{
+  width: calc(100% - 225px);
+  margin-left: 225px;
+  transition: all 0.5s ease;
+}
+
+.wrapper2 .section .top_navbar
+{
+  background: rgb(66, 7, 185);
+  height: 50px;
+  display: flex;
+  align-items: center;
+ 
+}
+
+.wrapper2 .section .top_navbar .hamburger a
+{
+  font-size: 28px;
+  color: #f4fbff;
+}
+
+.wrapper2 .section .top_navbar .hamburger a:hover
+{
+  color: #a2ecff;
+}
+
+ .wrapper2 .section .container
+ {
+  margin: 30px;
+  padding: 50px;
+  line-height: 28px;
+  color: white
+}
+
+body.active .wrapper2 .sidebar
+{
+  left: -225px;
+}
+
+body.active .wrapper2 .section
+{
+  margin-left: 0;
+  width: 100%;
+}
